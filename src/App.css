@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(110deg, #22d1ee 50%, #46c3db 0);
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-wrapper {
+    width: 90%;
+    background-color: #171332;
+    height: 600px;
+    position: relative;
+    padding: 60px 0px 0px 0px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 10px 22px 8px rgba(0, 0, 0, 0.55) !important;
+    -moz-box-shadow: 0px 10px 22px 8px rgba(0, 0, 0, 0.55) !important;
+    box-shadow: 0px 10px 22px 8px rgba(0, 0, 0, 0.55) !important;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    margin-left: 5px;
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #46c3db;
+    border-radius: 10px;
+}
+
+.input-field>label:not(.label-icon).active {
+    transform: translateY(-5px) scale(0.8) !important;
+}
+
+input {
+    color: #80cbc4;
+    border-bottom: 1px solid #80cbc4 !important;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+label {
+    color: #80cbc4 !important;
+    letter-spacing: 1px;
+}
+
+textarea {
+    color: #80cbc4;
+    border-bottom: 1px solid #80cbc4 !important;
+    box-shadow: 0 1px 0 0 #80cbc4 !important;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #80cbc4;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #80cbc4 !important;
+    box-shadow: 0 1px 0 0 #80cbc4 !important;
+}
+
+.input-field textarea[type=text]:focus {
+    border-bottom: 1px solid #80cbc4 !important;
+    box-shadow: 0 1px 0 0 #80cbc4 !important;
+}
+
+.center-align {
+    margin-top: 15px;
+}
+
+.title {
+    position: absolute;
+    width: 335px;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'Bad Script', cursive;
+    text-shadow: 1px 1px #004d40;
+    top: 0;
+    left: 0;
+    padding: 11px 14px 18px 57px;
+    background: linear-gradient(50deg, #22d1ee 52%, #46c3db 0);
+    z-index: 100;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 75%);
+    clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 75%);
+}
+
+.height {
+    height: 400px !important;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.fas {
+    margin: 20px 10px 0 10px;
+    color: #80cbc4;
+    font-size: 28px; 
+    line-height: 28px !important;
+}
+
+.heartBeat {
+    animation-delay: 3s ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.x {
+    position: absolute;
+    right: 10px;
+    top: -10px;
+}
+
+.paragraph {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+}
+
+.card-content {
+    padding: 8px !important;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    text-transform: none !important;
+}
+
+.create {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    text-transform: none !important;
+}
+
+.username {
+    color: #171332;
+}
+
+.span-user {
+    font-weight: bold;
+    color: #171332;
+    font-size: 17px;
+}
+
+.entry-p {
+    color: #171332;
+    margin-top: 20px;
+}
+
+.likes {
+    position: absolute;
+    bottom: 13px;
+    right: 60px;
+    font-size: 20px;
+    color: #46c3db;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-thumbs-up {
+    color: #22d1ee;
+    transition: 0.4s ease;
+    margin: 0px 5px 0px 0px !important;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.fa-thumbs-up:hover {
+    color: #0d8abc;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.card {
+    color: #171332 !important;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 120px;
+}
+
+.bounceIn {
+    animation-duration: 1.5s;
+}
+
+.fadeIn {
+    animation-duration: 2.5s;
+}
+
+@media screen and (max-width: 425px) {
+    .fas {
+        font-size: 20px; 
+        line-height: 20px !important;
+        margin-right: 5px;
+    }
+}
